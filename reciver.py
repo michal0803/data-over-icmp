@@ -41,7 +41,7 @@ class ReciverICMP:
             except socket.timeout:
                 break
             finally:
-                # After first recived packet set timeout for coming
+                # After first recived packet set timeout for incoming
                 self.socket.settimeout(0.5)
 
             # Extract icmp from ip
